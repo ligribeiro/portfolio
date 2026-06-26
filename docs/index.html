@@ -4,21 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ligia Ribeiro - Portfólio</title>
-    <!-- Importando a fonte Sen -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Sen:wght@400;700;800&display=swap" rel="stylesheet">
-    <!-- Arquivo CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <!-- Background Animado -->
     <div class="bg-orbs">
         <div class="orb orb-orange"></div>
         <div class="orb orb-purple"></div>
     </div>
 
-    <!-- Navegação -->
     <header class="glass-nav">
         <nav>
             <div class="logo">LR.</div>
@@ -34,12 +27,11 @@
     </header>
 
     <main>
-        <!-- Seção Sobre / Hero -->
         <section id="sobre" class="hero section">
             <div class="hero-content glass-panel">
                 <div class="hero-profile">
-                    <!-- Certifique-se de que sua foto de perfil tem esse nome na pasta img -->
-                    <img src="assets/img/perfil.jpg" alt="Foto de Ligia Ribeiro" class="profile-img">
+                    <!-- Tenta carregar o PNG primeiro, se falhar tenta JPG -->
+                    <img src="assets/img/perfil.png" onerror="this.onerror=null; this.src='assets/img/perfil.jpg'" alt="Foto de Ligia Ribeiro" class="profile-img">
                 </div>
                 <div class="hero-text">
                     <h1>Olá, eu sou <span>Ligia Ribeiro</span></h1>
@@ -49,94 +41,101 @@
             </div>
         </section>
 
-        <!-- Seção Projetos -->
         <section id="projetos" class="section">
             <h2 class="section-title">Projetos em Destaque</h2>
             <div class="projects-grid">
 
                 <!-- Projeto Azimuth -->
                 <div class="project-card glass-panel">
-                    <div class="project-gallery">
-                        <img src="assets/img/Azimith_Login.jpg" alt="Azimuth Login">
-                        <img src="assets/img/Azimuth%20geral.jpg" alt="Azimuth Geral">
-                        <img src="assets/img/Azimuth%20mapa.jpg" alt="Azimuth Mapa">
-                        <img src="assets/img/Azimuth_home.jpg" alt="Azimuth Home">
-                        <img src="assets/img/Azimuth_Relatorio.jpg" alt="Azimuth Relatório">
-                        <img src="assets/img/Azimuth1.png" alt="Azimuth">
-                    </div>
                     <div class="project-info">
                         <h3>Azimuth</h3>
                         <p><strong>🏆 Vencedor do Prêmio Fatec de Melhor Projeto de Tecnologia do Ano</strong><br><br>Sistema envolvendo app mobile e IoT com Arduino. Atuei na pesquisa de produtos oceanográficos, arquitetura do software, prototipação no Figma, criação do front-end, manutenção do banco de dados e construção da parte de IoT.</p>
                         <div class="tags">
                             <span>IoT</span><span>Figma</span><span>Front-end</span><span>DB</span>
                         </div>
+                        <details class="project-gallery-accordion">
+                            <summary class="btn">Ver Fotos do Projeto</summary>
+                            <div class="accordion-content">
+                                <img src="assets/img/Azimith_Login.jpg" alt="Azimuth Login">
+                                <img src="assets/img/Azimuth%20home.jpg" alt="Azimuth Home">
+                                <img src="assets/img/Azimuth%20geral.jpg" alt="Azimuth Geral">
+                                <img src="assets/img/Azimuth%20mapa.jpg" alt="Azimuth Mapa">
+                                <img src="assets/img/Azimuth_Relatorio.jpg" alt="Azimuth Relatório">
+                                <img src="assets/img/Azimuth1.png" alt="Azimuth Mobile">
+                            </div>
+                        </details>
                     </div>
                 </div>
 
                 <!-- Projeto Receita.AI -->
                 <div class="project-card glass-panel">
-                    <div class="project-gallery">
-                        <img src="assets/img/Receita_a-_home.png" alt="Receita AI Home">
-                        <img src="assets/img/Receita_AI_HomeSemLogin.png" alt="Receita AI Sem Login">
-                        <img src="assets/img/Receita%20AiConfirmarFoto.png" alt="Receita AI Foto">
-                        <img src="assets/img/Receita_ai_RegistrarSegundaTela.png" alt="Receita AI Registro">
-                        <img src="assets/img/Receitaai_MinhasReceita.png" alt="Receita AI Minhas Receitas">
-                        <img src="assets/img/ReceitaaiChatComAReceita.png" alt="Receita AI Chat">
-                        <img src="assets/img/receitaaiRegistrar.png" alt="Receita AI Registrar">
-                    </div>
                     <div class="project-info">
                         <h3>Receita.AI</h3>
                         <p>Aplicação integrando inteligência artificial. Fui responsável pela criação da identidade visual, construção do design system do projeto, melhorias de usabilidade e atuação no desenvolvimento do front-end.</p>
                         <div class="tags">
                             <span>Design System</span><span>UI/UX</span><span>Front-end</span>
                         </div>
+                        <details class="project-gallery-accordion">
+                            <summary class="btn">Ver Fotos do Projeto</summary>
+                            <div class="accordion-content">
+                                <img src="assets/img/Receita_a-_home.png" alt="Receita AI Home">
+                                <img src="assets/img/Receita_AI_HomeSemLogin.png" alt="Receita AI Sem Login">
+                                <img src="assets/img/Receita%20AiConfirmarFoto.png" alt="Receita AI Foto">
+                                <img src="assets/img/Receita_ai_RegistrarSegundaTela.png" alt="Receita AI Registro">
+                                <img src="assets/img/Receitaai_MinhasReceita.png" alt="Receita AI Minhas Receitas">
+                                <img src="assets/img/ReceitaaiChatComAReceita.png" alt="Receita AI Chat">
+                                <img src="assets/img/receitaaiRegistrar.png" alt="Receita AI Registrar">
+                            </div>
+                        </details>
                     </div>
                 </div>
 
                 <!-- Projeto Site Scrum -->
                 <div class="project-card glass-panel">
-                    <div class="project-gallery">
-                        <img src="assets/img/Scrum_1.png" alt="Scrum 1">
-                        <img src="assets/img/Scrum_2.png" alt="Scrum 2">
-                        <img src="assets/img/Scrum_3.png" alt="Scrum 3">
-                        <img src="assets/img/Scrum_4.png" alt="Scrum 4">
-                        <img src="assets/img/Scrum_5.png" alt="Scrum 5">
-                        <img src="assets/img/Scrum_6.png" alt="Scrum 6">
-                        <img src="assets/img/Scrum_7.png" alt="Scrum 7">
-                    </div>
                     <div class="project-info">
                         <h3>Site Scrum</h3>
                         <p>Plataforma interativa para ensino da metodologia ágil. Participei ativamente na criação da identidade visual, prototipação completa no Figma e desenvolvimento do front-end.</p>
                         <div class="tags">
                             <span>Identidade Visual</span><span>Figma</span><span>Front-end</span>
                         </div>
+                        <details class="project-gallery-accordion">
+                            <summary class="btn">Ver Fotos do Projeto</summary>
+                            <div class="accordion-content">
+                                <img src="assets/img/Scrum_1.png" alt="Scrum 1">
+                                <img src="assets/img/Scrum_2.png" alt="Scrum 2">
+                                <img src="assets/img/Scrum_3.png" alt="Scrum 3">
+                                <img src="assets/img/Scrum_4.png" alt="Scrum 4">
+                                <img src="assets/img/Scrum_5.png" alt="Scrum 5">
+                                <img src="assets/img/Scrum_6.png" alt="Scrum 6">
+                                <img src="assets/img/Scrum_7.png" alt="Scrum 7">
+                            </div>
+                        </details>
                     </div>
                 </div>
 
                 <!-- Projeto Visiona -->
                 <div class="project-card glass-panel">
-                    <div class="project-gallery">
-                        <img src="assets/img/VisaoGeral.png" alt="Visiona Geral">
-                        <img src="assets/img/Visiona.png" alt="Visiona">
-                        <img src="assets/img/Visiona_CadastorUser.png" alt="Visiona Cadastro">
-                        <img src="assets/img/Visiona_editUser.png" alt="Visiona Edit">
-                        <img src="assets/img/visiona2.png" alt="Visiona 2">
-                    </div>
                     <div class="project-info">
                         <h3>Visiona</h3>
                         <p>Desenvolvimento de sistema e interface. Minhas atribuições incluíram a criação da identidade visual, estabelecimento de um design system consistente, otimização de usabilidade e programação front-end.</p>
                         <div class="tags">
                             <span>Figma</span><span>UI/UX</span><span>Front-end</span>
                         </div>
+                        <details class="project-gallery-accordion">
+                            <summary class="btn">Ver Fotos do Projeto</summary>
+                            <div class="accordion-content">
+                                <img src="assets/img/VisaoGeral.png" alt="Visiona Geral">
+                                <img src="assets/img/Visiona.png" alt="Visiona">
+                                <img src="assets/img/Visiona_CadastorUser.png" alt="Visiona Cadastro">
+                                <img src="assets/img/Visiona_editUser.png" alt="Visiona Edit">
+                                <img src="assets/img/visiona2.png" alt="Visiona 2">
+                            </div>
+                        </details>
                     </div>
                 </div>
 
                 <!-- Projeto Pequenos Sabores -->
                 <div class="project-card glass-panel">
-                    <div class="project-gallery">
-                        <!-- Falta você adicionar a imagem deste projeto na pasta. O nome de exemplo é pequenos-sabores.png -->
-                        <img src="assets/img/pequenos-sabores.png" alt="Pequenos Sabores" onerror="this.style.display='none'">
-                    </div>
                     <div class="project-info">
                         <h3>Pequenos Sabores (ABP)</h3>
                         <p>Aplicação voltada para o controle de calorias e auxílio nutricional de crianças e adolescentes até 17 anos. Participei da pesquisa de público-alvo, criação da identidade visual, idealização da interface e construção do back-end e front-end.</p>
